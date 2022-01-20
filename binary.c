@@ -1,16 +1,15 @@
-#include <stdio.h>
-#include<math.h>
-int binary(int);
-int binary(int n)
-{
-    if (n != 0)
+#include<stdio.h>
+int main(){
+    int age,a;
+    for(a=3;a<20;a+=4){
+        printf("%d\nenter your age\t",a);
+        scanf("%d",&age);
+      /* if(age>10)
+    { break; } */
+    if(age>10)
     {
-        binary(n / 2);
-        printf("%d", n % 2);
+        continue;
     }
-}
-int main()
-{
-    binary(123);
-    printf("\n");
-}
+    printf("your age is %d",age);
+    }
+return 0;}
